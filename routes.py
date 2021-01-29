@@ -1,6 +1,6 @@
 from flask import Flask
 from data import insert
-from machine_learning import precisao
+#from machine_learning import precisao
 app = Flask("API")
 
 #metodo da api para verificar a precisão da inteligencia artificial
