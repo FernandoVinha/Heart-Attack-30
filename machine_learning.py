@@ -17,4 +17,4 @@ modelo = ExtraTreesClassifier()
 modelo.fit(x_treino, y_treino)
 #Imprimindo resultados: 
 precisao = modelo.score(x_teste, y_teste) 
-print("Precisão:", resultado)
+print("Precisão:", precisao)
