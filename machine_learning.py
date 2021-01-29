@@ -8,7 +8,7 @@ data = pd.read_csv('/home/ec2-user/Heart-Attack-30/cardio_train.csv')
 
 #Separando as variáveis entre preditoras e variável alvo 
 #y = data['cardio'] 
-#x = data.drop('cardio', axis = 1)
+x = data.drop('cardio', axis = 1)
 
 #criando os conjuntos de dados de treino e teste: 
 #x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size = 0.3)
@@ -18,4 +18,3 @@ data = pd.read_csv('/home/ec2-user/Heart-Attack-30/cardio_train.csv')
 #Imprimindo resultados: 
 #resultado = modelo.score(x_teste, y_teste) 
 #print("Precisão:", resultado)
-data.head()
