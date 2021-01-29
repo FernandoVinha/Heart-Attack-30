@@ -1,6 +1,7 @@
 import pandas as pd
 import sklearn
-from sklearn.model_selection import Train_test_split
+import numpy as np
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import ExtraTreesClassifier
 
 data = pd.read_csv('/home/ec2-user/Heart-Attack-30/cardio_train.csv')
