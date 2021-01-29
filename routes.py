@@ -6,7 +6,7 @@ app = Flask("API")
 #metodo da api para verificar a precisão da inteligencia artificial
 @app.route("/precision", methods=["GET"])
 def precision():
-    return {"a precisão é" precisao}
+    return {"a precisão é"}
 #metodo da api para verificar um novo dado
 @app.route("/send", methods=["POST"])
 def send():
