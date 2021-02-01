@@ -6,7 +6,6 @@ app = Flask("API")
 @app.route('/')
 def index():
     return 'Hello World'
-
 #metodo da api para verificar a precisão da inteligencia artificial
 @app.route("/precision", methods=["GET"])
 def precision():
@@ -14,7 +13,7 @@ def precision():
 #metodo da api para verificar um novo dado
 @app.route("/send", methods=["POST"])
 def send():
-    body = request.get_json()
+   # body = request.get_json()
    # if ("age"not in body):
    #     return geraResponse(400, "The parameter age is mandatory")
     #if ("gender"not in body):
