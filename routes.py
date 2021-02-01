@@ -7,14 +7,15 @@ app = Flask("API")
 @app.route("/precision", methods=["GET"])
 def precision():
     return {"a precisão é"}
+    
 #metodo da api para verificar um novo dado
 @app.route("/send", methods=["POST"])
 def send():
     body = request.get_json()
-    if ("age" not in body):
-        return geraResponse(400, "The parameter age is mandatory")
-    if ("gender" not in body):
-        return geraResponse(400, "The parameter gender is mandatory")
+    #if ("age" not in body):
+    #    return geraResponse(400, "The parameter age is mandatory")
+    #if ("gender" not in body):
+    #    return geraResponse(400, "The parameter gender is mandatory")
     if ("height" not in body):
         return geraResponse(400, "The parameter height is mandatory")
     if ("weight" not in body):
