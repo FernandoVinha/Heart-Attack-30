@@ -38,7 +38,7 @@ def send():
     #if ("active" not in body):
      #   return geraResponse(400, "The parameter active is mandatory")
 
-        dados_api = insert(body ["age"], body ["gender"], body ["height"], body ["weight"],body ["ap_hi,ap_lo"], body ["cholesterol"], body ["gluc"], body ["smoke"],body ["alco"], body ["active"] )
+     #   dados_api = insert(body ["age"], body ["gender"], body ["height"], body ["weight"],body ["ap_hi,ap_lo"], body ["cholesterol"], body ["gluc"], body ["smoke"],body ["alco"], body ["active"] )
     return insert
     
 
