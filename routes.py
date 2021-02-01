@@ -3,6 +3,10 @@ from data import insert
 #from machine_learning import precisao
 app = Flask("API")
 
+@app.route('/')
+def index():
+    return 'Hello World'
+
 #metodo da api para verificar a precisão da inteligencia artificial
 @app.route("/precision", methods=["GET"])
 def precision():
